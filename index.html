@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Conversor de Moneda Nacional</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    
+    <div class="flex-container bg-secondary bg-opacity-10 text-center">
+        
+        <section class="calculadora card py-4 px-5 text-light text-center" style="width: 26rem;">
+            <h2 class="h4">Pesos CLP</h2>
+            <div>
+                <input class="form-control" id="inputCLP" type="number" min=0 placeholder="Ingrese el monto en CLP">
+            </div>
+            <h3 class="h6 pt-4">Convertir a:</h3>
+            <div class="pb-4">
+                <select class="form-control" id="tipoMoneda">
+                    <option value="">Seleccione moneda</option>
+                    <option value="dolar">Dolar</option>
+                    <option value="euro">Euro</option>
+                </select>
+            </div>
+                <button class="btn btn-secondary text-light" type="button" id="buttonBuscar">Convertir</button>
+                <h4 class="m-2 h4" id="monedaConvertida">...</h4>
+                <div class="m-2" id="seccionError"></div>
+        </section>
+        
+        <section class="grafico">
+            <h1 class="text-secondary text-center mb-5">Conversor de Moneda Nacional</h1>  
+            <canvas id="myChart"></canvas>
+        </section>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
