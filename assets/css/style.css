@@ -3,17 +3,12 @@
     padding: 0;
 }
 
-.flex-container{
-    display: flex;
-    width: 100vw;
-    
-}
 .calculadora {
     background: linear-gradient(0deg, rgba(214,186,124,1) 0%, rgba(115,203,181,1) 100%);
+
 }
 
 .grafico {
-    margin: 10px 40px;
-    height: 800px;
-    width: 1000px;
+    margin: 10px auto;
+    height: 100vh;
 }

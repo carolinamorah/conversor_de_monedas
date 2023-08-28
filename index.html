@@ -11,30 +11,31 @@
 </head>
 <body>
     
-    <div class="flex-container bg-secondary bg-opacity-10 text-center">
-        
-        <section class="calculadora card py-4 px-5 text-light text-center" style="width: 26rem;">
-            <h2 class="h4">Pesos CLP</h2>
-            <div>
-                <input class="form-control" id="inputCLP" type="number" min=0 placeholder="Ingrese el monto en CLP">
-            </div>
-            <h3 class="h6 pt-4">Convertir a:</h3>
-            <div class="pb-4">
-                <select class="form-control" id="tipoMoneda">
-                    <option value="">Seleccione moneda</option>
-                    <option value="dolar">Dolar</option>
-                    <option value="euro">Euro</option>
-                </select>
-            </div>
-                <button class="btn btn-secondary text-light" type="button" id="buttonBuscar">Convertir</button>
-                <h4 class="m-2 h4" id="monedaConvertida">...</h4>
-                <div class="m-2" id="seccionError"></div>
-        </section>
-        
-        <section class="grafico">
-            <h1 class="text-secondary text-center mb-5">Conversor de Moneda Nacional</h1>  
-            <canvas id="myChart"></canvas>
-        </section>
+    <div class="bg-secondary bg-opacity-10 text-center">
+        <div class="row">
+            <section class="calculadora col-xs-12 col-md-4 card py-5 px-5 text-light text-center" style="width: 26rem;">
+                <h2 class="h4">Pesos CLP</h2>
+                <div>
+                    <input class="form-control" id="inputCLP" type="number" min=0 placeholder="Ingrese el monto en CLP">
+                </div>
+                <h3 class="h6 pt-4">Convertir a:</h3>
+                <div class="pb-4">
+                    <select class="form-control" id="tipoMoneda">
+                        <option value="">Seleccione moneda</option>
+                        <option value="dolar">Dolar</option>
+                        <option value="euro">Euro</option>
+                    </select>
+                </div>
+                    <button class="btn btn-secondary text-light" type="button" id="buttonBuscar">Convertir</button>
+                    <h4 class="m-2 h4" id="monedaConvertida">...</h4>
+                    <div class="m-2" id="seccionError"></div>
+            </section>
+            
+            <section class="grafico col-md-8 p-4 px-4">
+                <h1 class="text-secondary mb-5">Conversor de Moneda Nacional</h1>  
+                <canvas id="myChart"></canvas>
+            </section>
+        </div> 
     </div>
 
     <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
